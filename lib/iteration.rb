@@ -71,7 +71,16 @@ def total_even_pairs(src)
   total = 0
   row_index = 0
     while row_index < src.length
-      
+      num1 = src[row_index][0]
+      num2 = src[row_index][1]
+       if num1 %2 == 0  && num2 %2 == 0
+         total += num1 + num2
+      end
+    row_index += 1
+  end
+  total
+end
+        
 
 
 
