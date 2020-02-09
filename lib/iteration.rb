@@ -28,11 +28,19 @@ def find_greater_pair(src)
   # that are in the inner Arrays
 
   new_array = []
-
-
-
-
-
+  row_index = 0
+    while row_index < src.length
+      var1 = row_index[0]
+      var2 = row_index[1]
+        if var1 > var2
+          new_array << var1
+        else 
+          new_array << var2
+        end
+      row_index += 1
+    end
+    new_array
+end
 
 
 
